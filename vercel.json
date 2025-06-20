@@ -9,6 +9,7 @@
   "routes": [
     {
       "src": "/api/notes",
+      "methods": ["GET", "POST", "OPTIONS"],
       "dest": "/api/notes"
     }
   ]
