@@ -2,17 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
+      "src": "api/notes.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "server.js"
+      "src": "/api/notes",
+      "dest": "/api/notes"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
